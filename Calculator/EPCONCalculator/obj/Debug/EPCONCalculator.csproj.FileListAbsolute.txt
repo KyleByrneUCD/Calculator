@@ -1,0 +1,14 @@
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\bin\Debug\EPCONCalculator.exe.config
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\App.g.cs
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator_MarkupCompile.cache
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator_MarkupCompile.lref
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\bin\Debug\EPCONCalculator.exe
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\bin\Debug\EPCONCalculator.pdb
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\MainWindow.baml
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator.g.resources
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator.Properties.Resources.resources
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator.csproj.GenerateResource.Cache
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator.exe
+C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\obj\Debug\EPCONCalculator.pdb
