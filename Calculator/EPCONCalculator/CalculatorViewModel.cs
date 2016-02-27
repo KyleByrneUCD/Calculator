@@ -1029,14 +1029,14 @@ namespace EPCONCalculator
                 History += tempS;
             }
         }
-        public void MoveWindow()
-        {
-            try
-            {
-               // DragMove();
-            }
-            catch { }
-        }
+        //public void MoveWindow()
+        //{
+        //    try
+        //    {
+        //        DragMove();
+        //    }
+        //    catch { }
+        //}
         public void CloseButton_MouseEnter()
         {
             CloseIconSource = @"C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\Resources\Close (Small).png";
@@ -1055,11 +1055,11 @@ namespace EPCONCalculator
         }
         public void CloseButton_MouseLeftButtonUp()
         {
-           // this.Close();
+            Application.Current.MainWindow.Close();
         }
         public void MinimizeButton_MouseLeftButtonUp()
         {
-           // WindowState = WindowState.Minimized;
+           Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
         public void MenuIcon_MouseEnter()
         {

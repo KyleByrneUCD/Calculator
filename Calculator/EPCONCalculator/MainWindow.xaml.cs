@@ -127,7 +127,13 @@ namespace EPCONCalculator
         }
         private void MoveWindow(object sender, MouseButtonEventArgs e)
         {
-            _vm.MoveWindow();
+            {
+                try
+                {
+                    DragMove();
+                }
+                catch { }
+            }
         }
         private void CloseButton_MouseEnter(object sender, MouseEventArgs e)
         {
