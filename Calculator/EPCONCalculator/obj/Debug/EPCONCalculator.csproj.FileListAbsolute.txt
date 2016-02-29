@@ -26,3 +26,5 @@ C:\Users\Kyle\Documents\GitHub\Calculator\Calculator\EPCONCalculator\obj\Debug\M
 C:\Users\Kyle\Documents\GitHub\Calculator\Calculator\EPCONCalculator\obj\Debug\EPCONCalculator.g.resources
 C:\Users\Kyle\Documents\GitHub\Calculator\Calculator\EPCONCalculator\obj\Debug\EPCONCalculator.Properties.Resources.resources
 C:\Users\Kyle\Documents\GitHub\Calculator\Calculator\EPCONCalculator\obj\Debug\EPCONCalculator.csproj.GenerateResource.Cache
+C:\Users\Kyle\Documents\GitHub\Calculator\Calculator\EPCONCalculator\obj\Debug\App.baml
+C:\Users\Kyle\Documents\GitHub\Calculator\Calculator\EPCONCalculator\obj\Debug\buttonstyle.baml

@@ -16,9 +16,9 @@ namespace EPCONCalculator
         private String minimizeIconSource = @"C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\Resources\Minimize Icon Gray.png";
         private String menuIconSource = @"C:\Users\Kyle\Desktop\EPCON Work\EPCONCalculator\EPCONCalculator\Resources\MenuIcon.png";
         private Decimal currentValue = 0;
-        private Brush modeColor = Brushes.Black;
-        private Brush standardViewColor = Brushes.Black;
-        private Brush expandedViewColor = Brushes.Black;
+        private Brush modeColor = Brushes.White;
+        private Brush standardViewColor = Brushes.White;
+        private Brush expandedViewColor = Brushes.White;
         private Visibility menuVisibility = Visibility.Collapsed;
         private Visibility extraFunctionsVisibility = Visibility.Collapsed;
 

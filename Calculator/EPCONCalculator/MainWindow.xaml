@@ -25,6 +25,10 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter"/>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+    </Window.Triggers>
     <Grid Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height=".5*"></RowDefinition>
@@ -64,9 +68,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="CE" Style="{StaticResource ButtonStyle}" Click="ClickClearScreen"/>
-            <Button Grid.Column="1" Content="C" Style="{StaticResource ButtonStyle}" Click="ClickClearAll"/>
-            <Button Grid.Column="2" Content="⌫" Style="{StaticResource ButtonStyle}" Click="ClickBackSpace"/>
+            <Button Grid.Column="0" Content="CE" Style="{StaticResource ButtonStyle}" Click="ClickClearScreen" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="1" Content="C" Style="{StaticResource ButtonStyle}" Click="ClickClearAll" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="2" Content="⌫" Style="{StaticResource ButtonStyle}" Click="ClickBackSpace" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Row ="2">
             <Grid.ColumnDefinitions>
@@ -74,9 +78,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="1" Style="{StaticResource ButtonStyle}" Click="Click1"/>
-            <Button Grid.Column="1" Content="2" Style="{StaticResource ButtonStyle}" Click="Click2"/>
-            <Button Grid.Column="2" Content="3" Style="{StaticResource ButtonStyle}" Click="Click3"/>
+            <Button Grid.Column="0" Content="1" Style="{StaticResource ButtonStyle}" Click="Click1" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="1" Content="2" Style="{StaticResource ButtonStyle}" Click="Click2" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="2" Content="3" Style="{StaticResource ButtonStyle}" Click="Click3" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Row ="3">
             <Grid.ColumnDefinitions>
@@ -85,8 +89,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Content="4" Style="{StaticResource ButtonStyle}" Click="Click4"/>
-            <Button Grid.Column="1" Content="5" Style="{StaticResource ButtonStyle}" Click="Click5"/>
-            <Button Grid.Column="2" Content="6" Style="{StaticResource ButtonStyle}" Click="Click6"/>
+            <Button Grid.Column="1" Content="5" Style="{StaticResource ButtonStyle}" Click="Click5" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="2" Content="6" Style="{StaticResource ButtonStyle}" Click="Click6" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Row ="4">
             <Grid.ColumnDefinitions>
@@ -94,9 +98,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="7" Style="{StaticResource ButtonStyle}" Click="Click7"/>
-            <Button Grid.Column="1" Content="8" Style="{StaticResource ButtonStyle}" Click="Click8"/>
-            <Button Grid.Column="2" Content="9" Style="{StaticResource ButtonStyle}" Click="Click9"/>
+            <Button Grid.Column="0" Content="7" Style="{StaticResource ButtonStyle}" Click="Click7" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="1" Content="8" Style="{StaticResource ButtonStyle}" Click="Click8" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="2" Content="9" Style="{StaticResource ButtonStyle}" Click="Click9" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Row ="5">
             <Grid.ColumnDefinitions>
@@ -104,9 +108,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="+/-" Style="{StaticResource ButtonStyle}" Click="ClickMakeNegative"/>
-            <Button Grid.Column="1" Content="0" Style="{StaticResource ButtonStyle}" Click="Click0"/>
-            <Button Grid.Column="2" Content="." Style="{StaticResource ButtonStyle}" Click="ClickDecimal"/>
+            <Button Grid.Column="0" Content="+/-" Style="{StaticResource ButtonStyle}" Click="ClickMakeNegative" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="1" Content="0" Style="{StaticResource ButtonStyle}" Click="Click0" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="2" Content="." Style="{StaticResource ButtonStyle}" Click="ClickDecimal" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Column="1" Grid.RowSpan="6">
 
@@ -131,11 +135,11 @@
             <Image Grid.Row="0" Grid.Column="2" Width="16" Height="16" Source="{Binding CloseIconSource}" HorizontalAlignment="Right"
                    MouseEnter="CloseButton_MouseEnter" MouseLeave="CloseButton_MouseLeave"
                    PreviewMouseLeftButtonDown="CloseButton_MouseLeftButtonUp"/>
-            <Button Grid.Row="2" Grid.ColumnSpan="4" Content="/" Style="{StaticResource ButtonStyle}"  Click="ClickDivide"/>
-            <Button Grid.Row="3" Grid.ColumnSpan="4" Content="*" Style="{StaticResource ButtonStyle}"  Click="ClickMult"/>
-            <Button Grid.Row="4" Grid.ColumnSpan="4" Content="-" Style="{StaticResource ButtonStyle}"  Click="ClickMinus"/>
-            <Button Grid.Row="5" Grid.ColumnSpan="4" Content="+" Style="{StaticResource ButtonStyle}" Click="ClickPlus"/>
-            <Button Grid.Row="6" Grid.ColumnSpan="4" Content="=" Style="{StaticResource ButtonStyle}"  Click="ClickEquals"/>
+            <Button Grid.Row="2" Grid.ColumnSpan="4" Content="/" Style="{StaticResource ButtonStyle}"  Click="ClickDivide" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Row="3" Grid.ColumnSpan="4" Content="*" Style="{StaticResource ButtonStyle}"  Click="ClickMult" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Row="4" Grid.ColumnSpan="4" Content="-" Style="{StaticResource ButtonStyle}"  Click="ClickMinus" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Row="5" Grid.ColumnSpan="4" Content="+" Style="{StaticResource ButtonStyle}"  Click="ClickPlus" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Row="6" Grid.ColumnSpan="4" Content="=" Style="{StaticResource ButtonStyle}"  Click="ClickEquals" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Row="6" Grid.ColumnSpan="2" Visibility="{Binding ExtraFunctionsVisibility}">
             <Grid.ColumnDefinitions>
@@ -144,15 +148,15 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="%" Style="{StaticResource ButtonStyle}" Click="Percent_Click"/>
-            <Button Grid.Column="1" Style="{StaticResource ButtonStyle}" Click="Square_Click">
+            <Button Grid.Column="0" Content="%" Style="{StaticResource ButtonStyle}" Click="Percent_Click" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="1" Style="{StaticResource ButtonStyle}" Click="Square_Click" Template="{DynamicResource MainStyle}">
                 <TextBlock>
                 <Run FontStyle="Oblique">x</Run>
                      <Run Typography.Variants="Superscript">2</Run>
                 </TextBlock>
             </Button>
-            <Button Grid.Column="2" Content="√" Style="{StaticResource ButtonStyle}" Click="Sqrt_Click"/>
-            <Button Grid.Column="3" Content="π" Style="{StaticResource ButtonStyle}" Click="Pi_Click"/>
+            <Button Grid.Column="2" Content="√" Style="{StaticResource ButtonStyle}" Click="Sqrt_Click" Template="{DynamicResource MainStyle}"/>
+            <Button Grid.Column="3" Content="π" Style="{StaticResource ButtonStyle}" Click="Pi_Click" Template="{DynamicResource MainStyle}"/>
         </Grid>
         <Grid Grid.Column="0" Grid.RowSpan="7" HorizontalAlignment="Left" Visibility="{Binding MenuVisibility}">
             <Grid.RowDefinitions>
@@ -170,7 +174,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Rectangle Grid.Row="0" Grid.RowSpan="7" Grid.ColumnSpan="3" Width="280" Height="1000" Canvas.Top="100" Canvas.Left="100" Fill="White"/>
+            <Rectangle Grid.Row="0" Grid.RowSpan="7" Grid.ColumnSpan="3" Width="280" Height="1000" Canvas.Top="100" Canvas.Left="100" Fill="#FF0089D8"/>
             <Image Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="20" Height="20" Source="{Binding MenuIconSource}"
                    MouseEnter="MenuIcon_MouseEnter" MouseLeave="MenuIcon_MouseLeave"
                    MouseLeftButtonDown="MenuIcon_MouseLeftButtonDown"/>
